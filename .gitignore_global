@@ -1,0 +1,76 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+
+# IDE config files
+**/*.sublime-*
+**/sftp-config.json
+**/sftp-config.json*
+**/sftp-config-alt.json
+**/sftp-config-alt*.json
+**/.DS_Store
+
+# Documentation
+docs/**
+
+# Cache
+common/project/cache/**
+!common/project/cache/templates
+common/project/cache/templates/**
+
+# Assets
+uploads/docs/**
+uploads/images/**
+uploads/tmp/**
+uploads/temp/**
+uploads/unsaved/**
+common/project/temp/**
+
+# Composer
+composer.phar
+composer.lock
+common/engine/vendor/**
+**/vendor/**
+vendor/
+
+##ATOM 
+.remote-sync_develop.json
+.remote-sync_master.json
+.remote-sync.json
+.remote-sync.json*
+botLog.txt

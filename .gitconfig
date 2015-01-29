@@ -1,0 +1,44 @@
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+	
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+	
+[core]
+	excludesfile = ~/.gitignore_global
+
+[core]
+	autocrlf = false
+	safecrlf = true
+	excludesfile = ~/.gitignore_global
+	sharedRepository = group
+	fileMode = false
+	
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	type = cat-file -t
+	dump = cat-file -p
+	stash-unapply = !git stash show -p | git apply -R
+	st = status
+	todo=grep --heading --break --ignore-case -e 'TODO:'
+	fix=grep --heading --break --ignore-case -e 'FIX:' -e 'FIXME:'
+	mab=grep --heading --break --ignore-case -e '//MAB'
+	
+[push]
+	default = simple
+	
+[color]
+	ui = true
+	
+
+
+	
+[user]
+	name = Miquel Adell
+	email = miquel.adell@rsbmedia.com
